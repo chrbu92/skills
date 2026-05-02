@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cbulloss-skills",
+  "description": "Personal collection of Claude skills for dev tooling, PM/dev/review workflows, and personal automation.",
+  "owner": {
+    "name": "cbulloss",
+    "email": "cbulloss@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "cbulloss-skills",
+      "description": "A growing collection of Claude skills for dev tooling, PM/dev/review workflows in the AI era, and personal automation. Each skill is self-contained and copyable.",
+      "category": "productivity",
+      "source": "."
+    }
+  ]
+}
