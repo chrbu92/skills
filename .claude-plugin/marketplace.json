@@ -11,7 +11,7 @@
       "name": "cbulloss-skills",
       "description": "A growing collection of Claude skills for dev tooling, PM/dev/review workflows in the AI era, and personal automation. Each skill is self-contained and copyable.",
       "category": "productivity",
-      "source": "."
+      "source": "./"
     }
   ]
 }
