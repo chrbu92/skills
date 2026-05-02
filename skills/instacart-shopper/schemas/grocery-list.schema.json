@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/cbulloss/skills/schemas/grocery-list.schema.json",
+  "title": "Grocery list",
+  "description": "Structured grocery list input for the instacart-shopper skill. Designed to be the natural output of an upstream meal-planning skill or any tool that already has structured ingredient data.",
+  "type": "object",
+  "required": ["items"],
+  "additionalProperties": false,
+  "properties": {
+    "store": {
+      "type": "string",
+      "description": "Name of the Instacart-supported store to shop at (e.g., 'Wegmans', 'Food Lion', 'Harris Teeter'). If omitted, the skill will ask the user upfront."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Free-form notes about the list as a whole (e.g., 'weekly groceries', 'dinner party Saturday'). Not used for shopping decisions."
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Item name (e.g., 'chicken breast', 'milk', '2% milk', 'organic baby spinach'). Be as specific as you'd like; the skill will ask for clarification on ambiguous items."
+          },
+          "quantity": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "description": "Numeric quantity. Combined with 'unit' if specified. Defaults to 1 if omitted (with the standard unit Instacart presents)."
+          },
+          "unit": {
+            "type": "string",
+            "description": "Unit of measure (e.g., 'lb', 'oz', 'gal', 'each', 'dozen', 'loaf'). Optional; the skill will use Instacart's default unit if omitted."
+          },
+          "notes": {
+            "type": "string",
+            "description": "Free-form notes about this item (e.g., 'medium heat', 'no nuts', 'organic preferred'). The skill will use these as soft preferences during search."
+          },
+          "brand": {
+            "type": "string",
+            "description": "Optional brand preference. The skill will try to find this brand first; if unavailable, it falls back to the substitution policy."
+          }
+        }
+      }
+    }
+  }
+}

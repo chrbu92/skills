@@ -1,0 +1,19 @@
+{
+  "store": "Wegmans",
+  "notes": "Weekly groceries, dinner party on Saturday",
+  "items": [
+    { "name": "chicken breast", "quantity": 2, "unit": "lb" },
+    { "name": "ground beef", "quantity": 1, "unit": "lb" },
+    { "name": "salmon fillet", "quantity": 12, "unit": "oz" },
+    { "name": "milk" },
+    { "name": "greek yogurt", "brand": "Chobani" },
+    { "name": "cheddar cheese", "notes": "sharp preferred" },
+    { "name": "bananas", "quantity": 6 },
+    { "name": "spinach", "notes": "organic preferred" },
+    { "name": "apples", "quantity": 3, "unit": "lb" },
+    { "name": "pasta sauce" },
+    { "name": "spaghetti" },
+    { "name": "sourdough bread", "quantity": 1, "unit": "loaf" },
+    { "name": "salsa", "notes": "medium heat" }
+  ]
+}

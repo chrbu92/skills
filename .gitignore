@@ -1,0 +1,9 @@
+.DS_Store
+.vscode/
+.idea/
+*.log
+node_modules/
+
+# Skill runtime state lives in ~/.claude/skills-data/, never inside the repo.
+# This entry exists as a guard in case someone symlinks state in by mistake.
+skills-data/

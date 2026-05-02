@@ -1,0 +1,15 @@
+# Weekly groceries — sample plain-text list
+# Lines starting with # are ignored. Blank lines too.
+
+2 lb chicken breast
+1 lb ground beef
+milk
+salsa (medium heat)
+1 loaf sourdough bread
+2 dozen eggs
+6 bananas
+spinach
+pasta sauce
+spaghetti
+cheddar cheese
+greek yogurt
